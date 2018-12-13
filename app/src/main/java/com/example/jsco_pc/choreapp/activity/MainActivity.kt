@@ -1,7 +1,8 @@
-package com.example.jsco_pc.choreapp
+package com.example.jsco_pc.choreapp.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.jsco_pc.choreapp.R
 
 class MainActivity : AppCompatActivity() {
 
