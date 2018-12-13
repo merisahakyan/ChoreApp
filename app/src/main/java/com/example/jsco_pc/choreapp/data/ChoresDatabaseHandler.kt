@@ -42,7 +42,7 @@ class ChoresDatabaseHandler (context:Context):
         db.insert(TABLE_NAME,null,contentValues)
 
         //Log.d("Data inserted","SUCCESS")
-        Toast.makeText(this.context,"created",Toast.LENGTH_LONG).show()
+        //Toast.makeText(this.context,"created",Toast.LENGTH_LONG).show()
         db.close()
     }
 
