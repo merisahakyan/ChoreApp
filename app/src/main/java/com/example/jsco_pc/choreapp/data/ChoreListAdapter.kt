@@ -27,7 +27,10 @@ class ChoreListAdapter(private val list:ArrayList<Chore>, private val context:Co
     }
 
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) , View.OnClickListener {
+        override fun onClick(v: View?) {
+            
+        }
 
         var choreName=itemView.findViewById<TextView>(R.id.listChoreName)
         var assignedBy=itemView.findViewById<TextView>(R.id.listAssignedBy)
