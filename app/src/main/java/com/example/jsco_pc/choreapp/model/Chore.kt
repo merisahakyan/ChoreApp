@@ -1,5 +1,8 @@
 package com.example.jsco_pc.choreapp.model
 
+import android.text.format.DateFormat
+import java.util.*
+
 class Chore() {
     var choreName:String? = null
     var assignedBy:String? = null
@@ -16,5 +19,9 @@ class Chore() {
         this.assignedTo=assignedTo
         this.timeAssigned=timeAssigned
         this.id=id
+    }
+
+    fun showHumanDate(dateFormat:String,milliseconds:Long):String{
+        return DateFormat.format(dateFormat, milliseconds).toString()
     }
 }
