@@ -102,9 +102,9 @@ class ChoresDatabaseHandler (context:Context):
         return db.update(TABLE_NAME,contentValues, KEY_ID+"=?", arrayOf(chore.id.toString()))
     }
 
-    fun deleteChore(chore:Chore){
+    fun deleteChore(id:Int){
         var db:SQLiteDatabase = writableDatabase
-        db.delete(TABLE_NAME, KEY_ID+"=?", arrayOf(chore.id.toString()))
+        db.delete(TABLE_NAME, KEY_ID+"=?", arrayOf(id.toString()))
         db.close()
     }
 

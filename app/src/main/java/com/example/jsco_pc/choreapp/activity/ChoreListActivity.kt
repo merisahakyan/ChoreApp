@@ -49,10 +49,11 @@ class ChoreListActivity : AppCompatActivity() {
 
         for (c in choreList!!){
             var chore: Chore = Chore()
-            chore.choreName = c.choreName
-            chore.assignedBy = c.assignedBy
+            chore.choreName = "Chore ${c.choreName}"
+            chore.assignedBy = "Assigned by: ${c.assignedBy}"
             chore.timeAssigned = c.timeAssigned
-            chore.assignedTo = c.assignedTo
+            chore.assignedTo = "Assigned to: ${c.assignedTo}"
+            chore.id = c.id
 
             choreListItems!!.add(chore)
         }
